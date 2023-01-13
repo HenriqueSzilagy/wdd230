@@ -1,5 +1,5 @@
 const copyright = document.querySelector('#copyrightyear')
-copyright.textContent = `© ${new Date().getFullYear()} | Carlos Henrique Szilagy |Last Update:`;
+copyright.textContent = `© ${new Date().getFullYear()} | Carlos Henrique Szilagy | Last Update: `;
 
 const lastModified = document.querySelector('#lastmodified');
 
