@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3em;
+    text-align: center;
+}
+h1, h2, h3{font-family: 'Roboto', sans-serif;}
+
+p{font-family: 'Lato', sans-serif;}
+
+nav {
+    background-color: #820ad1;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: -48px;
+    justify-content: space-evenly;
+}
+header img{
+   width: 50%;
+   margin-top: 5em;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.2rem;
+    flex: 1 1 auto;
+
+}
+nav a:hover {
+	background-color: silver;
+	color: #820ad1;
+}
+main img{
+    width: 100%;
+}
+main h2{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: #820ad1;
+    font-size: 2.4rem;
+}
+
+
+main h1{
+        font-size: 2.9rem;
+        margin-top: 2.4em;
+        margin-bottom: 1.5em;
+        color: #820ad1;
+    }
+
+main p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5em;
+}
+main h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #820ad1;
+    font-size: 2.4rem;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    color: white
+}
+
+.colors th {
+    background-color: #820ad1;
+    font-size: 1.5rem
+}
+
+.colors td {
+    width: 25%;
+    height: 2em;
+    font-size: 1.5rem
+}
+.primary{
+    background-color: #820ad1;
+    color: white;
+    border: 0.7px solid gray;
+}
+.secondary{
+    background-color: white;
+    color: #820ad1;
+    border: 0.7px solid silver;
+}
+.accent1 {
+    background-color: silver;
+    color: white;
+     border: 0.7px solid silver;
+}
+.accent2 {
+    background-color: black;
+    color: white;
+     border: 0.7px solid silver;
+}
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+    header img{
+        width: 30%;
+     }
+     main img{
+         width: 50%;
+     }
+}
+
