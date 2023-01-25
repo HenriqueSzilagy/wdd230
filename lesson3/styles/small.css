@@ -13,6 +13,7 @@ h1, h2, h3{font-family: 'Roboto', sans-serif;}
 
 p{font-family: 'Lato', sans-serif;}
 
+
 nav {
     background-color: #820ad1;
     display: flex;
@@ -20,10 +21,11 @@ nav {
     flex: 1 1 auto;
     margin: -48px;
     justify-content: space-evenly;
+    margin-bottom: 5em
 }
 header img{
    width: 50%;
-   margin-top: 5em;
+   
 }
 nav a {
 	display: block;
