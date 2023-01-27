@@ -9,9 +9,9 @@ body{
     padding: 3em;
     text-align: center;
 }
-h1, h2, h3{font-family: 'Roboto', sans-serif;}
+h1, h2, h3{font-family: 'Montserrat', sans-serif;}
 
-p{font-family: 'Lato', sans-serif;}
+p{font-family: 'Roboto', sans-serif;}
 
 /* fix*/
 nav {

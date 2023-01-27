@@ -1,0 +1,181 @@
+h1, h2{font-family: 'Montserrat', sans-serif; }
+span#copyrightyear, span#lastmodified, p {font-family: 'Roboto', sans-serif; }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-row: 1fr 1fr;
+    font-size: 0.9em;
+    background-color: #820ad1;
+    justify-items: center;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    
+}
+header h2{
+    font-size: 0.6em;
+    
+}
+
+
+header img{
+    width: 4em;
+    height: 4em;
+    grid-column: 1/2;
+    margin-top: 20%;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#socialMedias {
+    display: flex;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin-top: 1em;
+    column-gap: 0.5em;
+    margin-top: 12%;
+}
+#socialMedias img{
+    width: 1.5em;
+    height: auto;
+    
+}
+
+.date {
+    grid-column: 1/6;
+    background-color: white;
+    color: #820ad1;
+    margin: auto;
+    margin-bottom: 1em; 
+    border-radius: 2.5px;
+}
+
+
+#hamburguerBtn{
+    margin-top: -2%;
+    
+}
+
+nav button{
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburguerBtn span:nth-child(1) {display:block;}
+#hamburguerBtn span:nth-child(2) {display:none;}
+
+
+#hamburguerBtn.open span:nth-child(1) {display:none;}
+#hamburguerBtn.open span:nth-child(2) {display:block;}
+
+main{
+    display: grid;
+    grid-auto-rows: 13em;
+    gap: 1em;
+}
+main h1{
+    margin-top: -0.1em;
+    font-size: 1.6rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+
+#heroBox, #event, #wheather, #newRelease, #spotlight{
+    
+    border: 1px solid black;
+}
+#spotlight{
+    display: flex;
+    border: 1px solid black;
+    grid-row: 5/7;
+    column-gap: 5px;
+    justify-content: space-evenly;
+}
+
+.spotlight1, .spotlight2, .spotlight3{
+    border: 1px solid black;
+    margin-top: 0.6rem;
+    font-size: 1.9rem;
+    flex: 35%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.spotlight1{
+    margin-right: -0.3rem;
+}
+.spotlight3{
+    display: none;
+}
+   
+   #join{
+    display: none;
+   }
+
+footer{
+   
+    text-align: center;
+    background-color: #820ad1;
+    
+}
+footer img{
+    width: 35%;
+    height: auto;
+    margin-top: 1.3em;
+}
+#footerTop, #copyrightyear, #lastmodified, footer p{
+    color: white;
+    
+}
+
+#footerTop{
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+#footerBottom{
+    padding-top: 1.2em;
+    margin: -1.3em;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+}
+footer p{
+    margin: 0.9rem;
+}
+
+span#copyrightyear{
+    font-weight: 500;
+}
