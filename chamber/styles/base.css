@@ -4,7 +4,6 @@ span#copyrightyear, span#lastmodified, p {font-family: 'Roboto', sans-serif; }
 header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-row: 1fr 1fr;
     font-size: 0.9em;
     background-color: #820ad1;
     justify-items: center;
