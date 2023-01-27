@@ -48,7 +48,7 @@
         margin-right: -15em;
         
     }
-    #wheather{
+    #weather{
         display: flex;
         flex: 30%;
         margin-left: 15em;
@@ -64,7 +64,6 @@
         height: auto;
         grid-column: 1/2;
         grid-row: 1/2;
-        margin-top: -em;
     }
     .info{
         display: flex;
