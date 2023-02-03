@@ -1,6 +1,6 @@
 @media only screen and (min-width: 45rem){
 
-   
+    
     #heroBox{
         grid-column: 1/3;
     }
@@ -11,6 +11,7 @@
     #spotlight{
         grid-column: 1/3;
         grid-row: 3/4;
+        flex-direction: row;
     }
 
     #join{
@@ -18,18 +19,37 @@
         display: unset;
         grid-row: 4/5;
         border: 1px solid black;
+        background-color: #820ad1;
+        color: white;
+        text-align: center;
+    }
+    #join h1{
+        background-color: #820ad1;
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+        margin-left: 6em;
+        margin-right: 6em;
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
+    #join p{
+        margin-top: 2em;
+        
+    }
+    #join p, #event p, #newRelease p {
+        font-size: 1.3em;
     }
     #event{
-        display: flex;
-        margin-right: -15em;
+        
+        margin-right: -13em;
+        
         
     }
+    
     #weather{
         display: flex;
-        flex: 30%;
-        margin-left: 15em;
-        
+        margin-left: 13em;
     }
+    
     #footerTop{
         display: grid;
         grid-template-columns: 100px 1fr 1fr;
@@ -67,7 +87,19 @@
         border-right:  1px solid white;
         justify-content: center;
     }
-    
-   
-    
+    #heroBox h1{
+        margin-right: 8em;
+        margin-left: 8em;
+    }
+    #heroBox a{
+        margin-left: 15em;
+        margin-right: 14em;
+    }
+    .spotlight1 h2, .spotlight1 p, 
+    .spotlight2 h2, .spotlight2 p {
+        padding: 0;
+        font-size: 0.9rem;
+        margin-top: 6%;
+  }
+
 }

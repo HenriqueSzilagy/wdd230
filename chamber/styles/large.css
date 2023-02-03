@@ -29,25 +29,57 @@
         margin-left: -5em;
     }
     #event{
+        width: 13.25rem;
+        height: 13.25rem;
         grid-column: 1/2;
         grid-row: 1/2;
         margin: 0;
     }
     #weather{
+        width: 13.25rem;
+        height: 13.25rem;
         grid-column: 1/2;
         grid-row: 2/3;
         margin: 0;
         flex: none;
     }
     #join{
+        width: 13.25rem;
+        height: 13.25rem;
         grid-column: 1/2;
         grid-row: 3/4;
+
+    }
+    #join h1{
+        margin-top: 0.7rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    #join p{
+        margin-top: 0;
+        margin-left: 3px;
+        margin-right: 3px;
     }
     #heroBox{
         grid-column: 2/4;
         grid-row: 1/3;
     }
+    #heroBox h1{
+        margin: 0;
+        margin-top: 0.5rem;
+        right: 2em;
+        left: 2em;
+        font-size: 1.8em;
+    }
+    #heroBox a{
+        margin: 0;
+        font-size: 2em;
+        margin-top: 1em;
+        left: 4em;
+        right: 4em;
+    }
     #newRelease{
+        font-size: 0.9rem;
         grid-column: 2/4;
         grid-row: 3/4;
     }
@@ -55,13 +87,42 @@
         display: unset;
     }
     #spotlight{
+        width: 13.25rem;
+        height: 40.89rem;
         display: flex;
         grid-column: 4/5;
         grid-row: 1/4;
         flex-direction: column;
     }
     .spotlight1{
+        
         margin-right: 0.5rem;
     }
+    .spotlight3 h1{
+        font-size: rem;
+    }
+    
+    #heroBox img{
+        width: 100%;
+        height: 100%;
+    }
+    #newRelease p{
+        margin: 1em;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .spotlight1 h2, .spotlight1 p, 
+    .spotlight2 h2, .spotlight2 p,
+    .spotlight3 h2, .spotlight3 p {
+        font-size: 0.77rem;
+        margin-top: 23%;
+  }
+  .spotlight3 h2{
+      margin-top: 14%;
+  }
+  .spotlight1 h1, .spotlight2 h1{
+      font-size: 1.1rem;
+  }
 
 }
