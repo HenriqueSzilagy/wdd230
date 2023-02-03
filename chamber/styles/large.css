@@ -1,8 +1,32 @@
 @media only screen and (min-width: 64rem){
 
+    nav button{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        border-left: 1px solid rgba(0, 0, 0, 0.253);
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.253);
+        
+    }
+    nav{
+        align-items: center;
+        grid-column: 2/2;
+    }
+    #socialMedias{
+        grid-column: 3/3;
+        margin-right: -13em;
+        gap: 2em;
+    }
+    
     header img{
         width: 40%;
         height: auto;
+        margin-top: 0.8rem;
+        margin-left: -5em;
     }
     #event{
         grid-column: 1/2;
