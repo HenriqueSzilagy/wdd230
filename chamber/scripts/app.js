@@ -9,17 +9,28 @@ const x = document.getElementById('hamburguerBtn');
 
 x.onclick = toggleMenu;
 
+
+
+
+
 const datefield = document.querySelector(".date");
 
 
 
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }).format(
-	now
-);
+const fulldate = new Intl.DateTimeFormat("en-GB", { 
+  weekday: 'long', 
+  day: '2-digit', 
+  month: 'long', 
+  year: 'numeric' 
+}).format(now);
 
 
-datefield.innerHTML = `<em>${fulldate}</em>`;
+
+ datefield.innerHTML = `<em>${fulldate.split(',')[0]}, ${fulldate.split(',')[1]}</em>`;
+
+
+
 
 
 const copyright = document.querySelector('#copyrightyear')
