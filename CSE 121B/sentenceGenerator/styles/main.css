@@ -1,6 +1,6 @@
 
 body{
-  background-image: url('/images/background.jpg');
+  background-image: url('/CSE 121B/sentenceGenerator/images/background.jpg');
 }
 
 
@@ -8,15 +8,19 @@ body{
     color: white;
     text-align: center;
     font-size: 3em;
-    margin: 3em;
+    margin: 1em;
+
     border: 2px solid rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3px);
   }
+  #sentence{
+    margin-top: 2em;
+  }
   button{
     font-size: 0.5em;
     margin-top: -6em;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
   }
 header h1{
   color: white;
