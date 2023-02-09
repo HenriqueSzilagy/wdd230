@@ -16,7 +16,7 @@
 <body>
     <header>
         <img src="images/ChamberLogo.png" alt="ChamberLogo">
-        <h3>São Bernardo do campo Chamber of Commerce</h1>
+        <h3>São Bernardo do campo Chamber of Commerce</h3>
         <nav>
             <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -43,7 +43,11 @@
         
         <div id="heroBox">
             <h1>Welcome to São Bernardo do Campo</h1>
-            <img src="images/sbc.jpg" alt="Image Of SBC">
+            <picture class="hero">
+                <source srcset="images/wdd230_1100.jpg" media="(min-width: 1100px)" >
+                <source srcset="images/wdd230_800.jpg" media="(min-width: 800px)" >
+              <img src="images/wdd230_350.jpg" alt="Three people talkking">
+              </picture>
             <a href="#">join the Chamber</a>  
         </div>
         
@@ -53,7 +57,7 @@
         </div>
         
         <div id="weather">
-            <img src="images/wheather.png" alt="clima">
+            <img src="images/weather.svg" alt="clima">
         </div>
         
         <div id="newRelease">
@@ -71,20 +75,31 @@
             
             <div class="spotlight1">
                 <h1>coding classes</h1>
-                <img src="images/coding.png" alt="a screen with code">
+                <figure>
+                    <img src="images/coding.png" alt="a screen with code"
+                        sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 200px, 100vw"
+                        srcset="images/coding.png 442w, images/coding200px.png 200w">
+                  </figure>
                 <h2>Turn knowledge into action</h2>
                 <p>codingclasses@gmail.com</p>
                 <p id="number1">+55 1191312-9876</p>
             </div>
+            
+              
             <div class="spotlight2">
-                <img src="images/donation.png" alt="a image of donation">
+                <figure>
+                    <img  src="images/donation.png" alt="a image of donation"
+                    sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 200px, 100vw"
+                        srcset="images/donation.png 442w, images/donation200px.png 200w">
+                
+                </figure>
                 <h1>Donations for Community</h1>
                 <h2>Dress Those in Need Today!</h2>
                 <p>donation@gmail.com</p>
                 <p id="number2">+55 119714-5678</p>
             </div>
             <div class="spotlight3">
-                <img src="images/Entrepreneur.png" alt="Entrepreneur Lecture">
+                <img src="images/entrepreneur1024px.png" alt="Entrepreneur Lecture">
                 <h1>Entrepreneurship: From Idea to Success</h1>
                 <h2>Empower Your Entrepreneurial Journey</h2>
                 <p>donation@gmail.com</p>
