@@ -352,41 +352,7 @@ span#copyrightyear{
     text-align: center;
     margin-top: 3em;
 }
-    /*
-    #weather{
-        color: black;
-        background-color: #d1d1d1;
-        display: flex;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10%;
-        margin-left: 10%;
-        justify-content: space-between;
-    }
-    #weather h1{
-        display: flex;
-        align-self: flex-start;
-        margin-left: 1em;
-        margin-top: -0.2em;
-    }
-    #weather h2{
-        display: flex;
-        align-self: center;
-    }
-    #weather img{
-        margin-bottom:2em;
-        margin-right: 
-        width: 40%;
-        height: 40%;
-    }
-
-    #temperature{
-        font-size: 3em;
-        margin-right: 10px;
-    }
-    */
+    
     #spotlight img{
         width: 100%;
         height: 100%;
