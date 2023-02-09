@@ -1,6 +1,8 @@
 @media only screen and (min-width: 45rem){
 
-    
+    header img{
+        width: 8em;
+    }
     #heroBox{
         grid-column: 1/3;
         grid-row: 1/3;
@@ -18,44 +20,61 @@
     .spotlight1 h1, .spotlight2 h1{
         font-size: 1.1rem;
     }
-   
+   .spotlight1 img{
+       margin-top: -0.3em;
+   }
+   .spotlight2 img{
+       margin-top: -0.5em;
+   }
+
     #join{
         grid-column: 1/3;
         display: unset;
         grid-row: 5/6;
         border: 1px solid black;
-        background-color: #820ad1;
+        background-color: #d1d1d1;
         color: white;
         text-align: center;
     }
     #join h1{
         background-color: #820ad1;
+        color: #820ad1;
         box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
         margin-left: 6em;
         margin-right: 6em;
         margin-top: 1rem;
         border-radius: 4px;
     }
+    #join a{
+        text-decoration: none;
+        color: #d1d1d1;
+    }
     #join p{
         margin-top: 2em;
+        color: black;
         
     }
     #join p, #event p, #newRelease p {
         font-size: 1.3em;
     }
     
-    }
-    
-    #weather{
-        display: flex;
-        margin: 0;
-        
+    #temperature{
+        margin-top: -1em;
+        font-size: 2em;
         
     }
     #weather img{
-        margin-top: -20%;
-        margin-left: 5%;
+        width: 6em;
+        margin-top: -3.4em;
+        align-self: flex-start;
     }
+    
+    #weather h2{
+        margin-top: -0.6em;
+    }
+    #windSpeed{
+        margin-top: 5%
+;    }
     #footerTop{
         display: grid;
         grid-template-columns: 100px 1fr 1fr;
@@ -90,7 +109,7 @@
     #footerBottom{
         display: flex;  
          align-items: center;
-        border-right:  1px solid white;
+        
         justify-content: center;
     }
     #heroBox h1{
@@ -100,14 +119,13 @@
     }
     #heroBox a{
         font-size: 1.5em;
-        margin-left: 2em;
-        margin-right: 2em;
-        margin-top: 6em;
+        margin-top: 5em;
     }
     .spotlight1 h2, .spotlight1 p, 
     .spotlight2 h2, .spotlight2 p {
         padding: 0;
-        font-size: 0.7rem;
-        margin-top: 14%;
+        font-size: 0.8rem;
+        margin-top: 7%;
   }
 
+}
