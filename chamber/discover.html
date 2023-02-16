@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page SBC Chamber of Commerce</title>
+    <link rel="shortcut icon" href="myIcon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/ChamberLogo.webp" alt="ChamberLogo">
+        <h3>São Bernardo do campo Chamber of Commerce</h3>
+        <nav>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <div id="socialMedias">
+                <a id="inst" href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="insta icon">
+                </a>
+                <a id="linke" href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.png" alt="fb icon">
+                </a>
+        </div>
+    
+        <div class="date"></div>
+       
+    </header>
+    <main id="DiscoverMain">
+        <h3>You last visited this page <span id="last-visited"></span> days ago.</h3>
+        <h1>Statistical and demographic data</h1>
+        <div class="demographic-data">
+            <div class="data-box">
+              <h2>Total Population</h2>
+              <p>844,483</p>
+            </div>
+            <div class="data-box">
+              <h2>Education Level</h2>
+              <p>Less than high school: 9.2%</p>
+              <p>High school or equivalent: 24.4%</p>
+              <p>Some college or associate's degree: 21.9%</p>
+              <p>Bachelor's degree or higher: 44.5%</p>
+            </div>
+            <div class="data-box">
+              <h2>Average Income</h2>
+              <p>Monthly household income: R$ 3,460 (approximately USD 635)</p>
+              <p>Monthly per capita income: R$ 1,253 (approximately USD 230)</p>
+            </div>
+        </div>
+        <h1>Gallery</h1>
+        <div id="galleryImg">
+            <div class="space">
+                <picture><img src="images/placeholder.jpg" data-src="images/cityCenter.jpg" alt="Space Picture"></picture>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nulla laudantium, co</p>
+            </div>
+            <div class="space">
+                <picture><img src="images/placeholder.jpg" data-src="images/scania.jpg" alt="Harry Potter Universal studio Picture"></picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis debitis modi quis totam s</p>
+            </div>
+            <div class="space">
+                <picture><img src="images/placeholder.jpg" data-src="images/square.jpg" alt="Mountain Picture"></picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero quos, incidu!</p>
+            </div>
+            <div class="space">
+                <picture><img src="images/placeholder.jpg" data-src="images/miniShopping.jpg" alt="Space Picture"></picture>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam minus ut consequatur earum</p>
+            </div>
+            <div class="space">
+                <picture><img src="images/placeholder.jpg" data-src="images/restaurantWay.jpg" alt="Forest Picture"></picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quae delectus blanditiis temp.</p>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/lazyloading.js"></script>
+    <script src="scripts/localStorage.js"></script>
+</body>
+</html>

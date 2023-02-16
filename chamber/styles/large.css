@@ -130,4 +130,20 @@
     .spotlight1 h1, .spotlight2 h1{
         font-size: 1.1rem;
    }
+   div#galleryImg {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+    .space img{
+        width:unset;
+        height:unset;
+        
+    }
+    .space{
+        margin-right: 15em;
+        margin-left: 15em;
+    
+    }
+    
 }
