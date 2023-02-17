@@ -135,4 +135,12 @@
     .space img[data-src]:hover {
         box-shadow: 0 0 50px #333;
       }
+      .spotlight1 p:first-of-type, .spotlight2 p:first-of-type, .spotlight3 p:first-of-type {
+        top: 6.8em;
+        
+    }
+    .spotlight1 h2, .spotlight2 h2, .spotlight3 h2 {
+        top: 6em;
+        
+    }
 }

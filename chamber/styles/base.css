@@ -228,7 +228,7 @@ nav ul.open {display: block;}
     margin-top: -0.4rem;
   }
   .spotlight1 h2, .spotlight2 h2, .spotlight3 h2{
-      top: 7em;
+      top: 4em;
       right: 1em;
       margin-top: 1em;
   }  
@@ -240,11 +240,7 @@ nav ul.open {display: block;}
     padding-top: 2%;
     right: 1em;
   }
-  .spotlight1 p:last-of-type, .spotlight2 p:last-of-type, .spotlight3 p:last-of-type{
-    top: 9.5em;
-    padding-top: 4%;
-    right: 1em;
-  }
+  
   .spotlight2 h1{
     right: 0.7em;
     font-size: 1.5rem;
