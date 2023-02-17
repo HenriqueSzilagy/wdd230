@@ -46,22 +46,29 @@
    #weather h1{
     margin-top: 0.6em;
    }
-    #temperature {
-        font-size: 2em;
-        width: 100%;
-        margin-top: 0.5em;
+   #temperature {
+    font-size: 2em;
+    width: 100%;
+    margin-top: -28%;
     }
    
-    #weather img{
+    #weather img {
         margin-left: 20%;
         width: 80%;
-        margin-top: -0.5em;
-   }
-   
-   #windSpeed{
-       
-       margin-top: 1.5em;
-   }
+        margin-top: -53%;
+    }
+    #weather h2 {
+        margin-top: 4%;
+    }
+    #windSpeed {
+        margin-top: 33%;
+    }
+   #windChill {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+    margin-top: 22%;
+    }
     #join{
         width: 13.25rem;
         height: 13.25rem;
@@ -127,9 +134,7 @@
         font-size: 0.77rem;
         margin-top: 23%;
    }
-    .spotlight3 h2{
-        margin-top: 14%;
-   }
+    
     .spotlight1 h1, .spotlight2 h1{
         font-size: 1.1rem;
    }
@@ -147,6 +152,9 @@
         margin-right: 15em;
         margin-left: 15em;
     
+    }
+    .spotlight3 p:first-of-type {
+        top: 8.2em;
     }
     
 }

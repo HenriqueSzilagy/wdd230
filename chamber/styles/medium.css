@@ -69,12 +69,18 @@
         align-self: flex-start;
     }
     
-    #weather h2{
-        margin-top: -0.6em;
+    #weather h2 {
+        margin-top: -20%;
     }
-    #windSpeed{
-        margin-top: 5%
-;    }
+    #windSpeed {
+        margin-top: -7%;
+    }
+    #windChill {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        text-align: center;
+        margin-top: 3%;
+    }
     #footerTop{
         display: grid;
         grid-template-columns: 100px 1fr 1fr;
