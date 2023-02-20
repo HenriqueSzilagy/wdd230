@@ -123,7 +123,11 @@
    #spotlight img {
     width: 100%;
     height: auto;
+    
 }
+    .spotlight1 img, .spotlight2 img{
+        margin-top: 1em;
+    }
     #newRelease p{
         margin: 1em;
    }
