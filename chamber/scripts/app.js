@@ -57,3 +57,8 @@ var currentDay = new Date().getDay();
       '<div style="margin-bottom: 1em; background-color: #820ad1;  color: white; text-align: center; border: 1px solid #820ad1; padding: 10px 0;">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>'
     );
   }
+
+
+var formload = new Date();
+var datetime = formload.toISOString();
+document.getElementById("form").value = datetime;

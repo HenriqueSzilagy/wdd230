@@ -160,5 +160,44 @@
     .spotlight3 p:first-of-type {
         top: 8.2em;
     }
-    
+    #template{
+        display: grid;
+        grid-template-columns: 750px auto;
+    }
+    form fieldset, #submit{
+        margin-left: 50%;
+    }
+    #benefits{
+        display: unset;
+        text-align: center;
+        box-shadow: none;
+        margin-right: 0.5em;
+        
+    }
+    #benefits section{
+        border: .1rem solid black;
+        margin-bottom: .5em;
+    }
+    #benefits h1{
+        font-size: 1.6em;
+        border-bottom: 1px solid black;
+        color: #820ad1;
+        margin-top: 1.2em;
+    }
+    section h2{
+        font-size: 1.3em;
+    }
+    #np{
+        background-color: aquamarine;
+        border-radius: 5px;
+    }
+    #bronze{
+        background-color: #DB9370;
+    }
+    #silver{
+        background-color: #BAB8B5;
+    }
+    #gold{
+        background-color: #FFD700;
+    }
 }

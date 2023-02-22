@@ -436,14 +436,71 @@ figure{
      height: 400px;
   }
   
-  
+  form fieldset{
+      margin: 2rem 0;
+      border: 1px solid #820ad1;
+      border-radius: 10px;
+      padding: 1rem 2%;
+  }
+  form label{
+    font-size: 1.2em;
+  }
+form legend{
+    color: #820ad1;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.3em;
+}
+.required{
+    color: red;
+}
+ form input, textarea{
+     margin-top: 1em;
+     margin-bottom: 1.5em;
+ }
+ select{
+    margin-top: 1em;
+    margin-bottom: 6em;
+ }
+ #submit{
+     border: none;
+     background-color: red;
+     color: white;
+     border-radius: 1rem;
+     padding: .75rem 1.5rem;
+     margin: 0 0 2rem 2%;
+     width: 96%;
+     max-width: 20rem;
+     font-size: 1.5em;
+ }
 
- 
+ #submit:hover{
+     background-color: #820ad1;
+     text-decoration: underline;
+ }
 
-
-
-
-
+ #benefits{
+    display: none;
+}
+#thankyou{
+    box-shadow: none;
+    align-content: center;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+}
+#thankyou h1{
+    background-color: #820ad1;
+    margin: 1em;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+#thankyou img{
+    width: 300px;
+    height: 400px;
+}
 
 
  

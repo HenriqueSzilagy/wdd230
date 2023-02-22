@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="myIcon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/ChamberLogo.webp" alt="ChamberLogo">
+        <h3>São Bernardo do campo Chamber of Commerce</h3>
+        <nav>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+        </nav>
+        <div id="socialMedias">
+                <a id="inst" href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="insta icon">
+                </a>
+                <a id="linke" href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin.png" alt="fb icon">
+                </a>
+        </div>
+        
+        
+        <div class="date"></div>
+       
+    </header>
+    <main>
+        <div id="template">
+            <form action="thankyou.html">
+                
+                <fieldset id="personalInformation">
+                    <legend>Personal Information</legend>
+                    <span class="required">*</span>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <span class="required">*</span>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="business-position">Business Position Title:</label><br>
+                    <input type="text" id="business-position" name="business-position" placeholder="at least 7 alpha characters" pattern="[a-zA-Z\s\-]{7,}" title="Please enter a valid business position title with at least 7 alpha characters, hyphens, and spaces."><br>
+                    <span class="required">*</span>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="jorgeSmith@gmail.com" required><br>
+                    <span class="required">*</span>
+                    <label for="cellphone">Cell Phone Number:</label><br>
+                    <input type="tel" id="cellphone" name="cellphone" required><br>
+                </fieldset>
+                
+                <fieldset id="businessInformation">
+                    <legend>Business Information</legend>
+                    <span class="required">*</span>
+                    <label for="business-name">Business Name/Title:</label><br>
+                    <input type="text" id="business-name" name="business-name" required><br>
+                    <span class="required">*</span>
+                    <label for="membership-level">Membership Level:</label><br>
+                    <select  id="membership-level" name="membership-level" required>
+                        <option value="" disabled selected hidden>Choose a Membership Level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select><br>
+                    <label for="business-description">Business Description:</label><br>
+                    <textarea id="business-description" name="business-description" rows="5"></textarea>
+                </fieldset>
+                <input type="hidden" id="form" name="form" value="" hidden>
+                <input id="submit" type="submit" value="Enviar"><br>
+            </form>
+            <div id="benefits">
+                <h1>Membership Level Benefits</h1>
+                <section id="np">
+                    <h2> NP LEVEL</h2>
+                    <P>Thank you for visiting our membership page, NO Membership is for non-profit organizations and there is no fee, you have access to some demo training at this level</P>
+                </section>
+                
+                <section id="bronze">
+                    <h2>Bronze Level US$ 20</h2>
+                    <p>Thank you for contributing, at the bronze level you will have access to more than 20 video trainings and 10% discount on events </p>
+                </section>
+                
+                <section id="silver">
+                    <h2>Silver Level US$ 50</h2>
+                    <p>Thank you for contributing, at the Silver level you will be entitled to all the benefits of the previous level once more per month Display an advertisement for your business on the homepage</p>
+                </section>
+                
+                <section id="gold">
+                    <h2>Gold Level US$ 80</h2>
+                    <p>Thank you for contributing, at the gold level you will have access to all the advantages of the previous level plus exclusive events for gold level companies and 2 more advertisements per month</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerTop">
+            <img src="images/ChamberLogo.webp" alt="ChamberLogo">
+            <div class="info" >
+                <h2>São Bernado do Campo Chamber of Commerce</h2>
+                <p>Av. Francisco Prestes Maia, 1223</p>
+            </div>
+            <div class="contact">
+                <p>contact@sbccc@gmail.com</p>
+                <p>+(55) 11 91312-9855</p>
+                <a href="https://goo.gl/maps/BRLf7HKvcxgdimjd6">Location Map</a>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <span id="copyrightyear"></span>
+            <p>Carlos Henrique Szilagy</p>
+            <p>WDD 230 Project</p>
+        </div>
+        <span id="lastmodified"></span>
+    </footer>
+    <script src="scripts/app.js"></script>
+    
+</body>
+</html>
