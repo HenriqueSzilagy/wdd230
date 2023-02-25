@@ -1,21 +1,12 @@
-function toggleMenu(){
-    
+function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburguerBtn").classList.toggle("open");
-
 }
-
 const x = document.getElementById('hamburguerBtn');
 
 x.onclick = toggleMenu;
 
-
-
-
-
 const datefield = document.querySelector(".date");
-
-
 
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-GB", { 
@@ -25,13 +16,7 @@ const fulldate = new Intl.DateTimeFormat("en-GB", {
   year: 'numeric' 
 }).format(now);
 
-
-
  datefield.innerHTML = `<em>${fulldate.split(',')[0]}, ${fulldate.split(',')[1]}</em>`;
-
-
-
-
 
 const copyright = document.querySelector('#copyrightyear')
 copyright.textContent = `© ${new Date().getFullYear()} São Bernado do Campo Chamber   `;
