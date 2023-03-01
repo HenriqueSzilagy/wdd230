@@ -1,0 +1,38 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);  
+    text-align: center;
+    
+}
+
+  header h1{
+      color: #004472 ;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      
+  }
+  section img{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.5em;
+  }
+  section p{
+      color: black;
+    font-size: 1.3rem;
+  }
+  section {
+      color: #004472;
+    margin: 0.2em;
+    background-color: #04345438;
+    border: 1px solid #043454;
+}
+footer{
+    color: #004472;
+    text-align: center;
+    font-size: 2.5em;
+    background-color: #04345438;
+    margin-top: 1em;
+    ;
+    
+}
