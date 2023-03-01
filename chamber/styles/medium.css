@@ -156,5 +156,12 @@
     #submit{
         margin-left: 30%;
     }
-   
+    .mai{
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        max-width: 900px;
+        background-color: #eee;
+        
+}
 }
