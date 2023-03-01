@@ -1,0 +1,77 @@
+{
+    "directory": [
+      {
+        "name": "Açai Formosa",
+        "adress": "Av. Francisco Prestes Maia, 471",
+        "number": "(11) 95897-9313",
+        "url": "https://acaiformosa.com.br/",
+        "imagesrc": "images/acai.jpg",
+        "membershipLevel": "bronze"
+      },
+      {
+        "name": "Bendita Esfiha",
+        "adress": "Av. Francisco Preste Maia, 567",
+        "number": "(11) 2833-2255",
+        "url": "https://www.benditaesfiha.com.br/",
+        "imagesrc": "images/bendita.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Drogaria São Paulo",
+        "adress": "Av. Francisco Prestes Maia, 73",
+        "number": "(11) 4125-6384",
+        "url": "https://www.drogariasaopaulo.com.br/",
+        "imagesrc": "images/drogaria.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Banco Itaú",
+        "adress": "Av. Francisco Prestes Maia, 159",
+        "number": "(11) 4004-4828",
+        "url": "https://www.itau.com.br/",
+        "imagesrc": "images/itau.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "Kidbeeruta buffet",
+        "adress": "Av. Francisco Prestes Maia, 1491",
+        "number": "(11) 4335-1886",
+        "url": "https://www.kidbeeruta.com.br/",
+        "imagesrc": "images/kidbeeruta.jpg",
+        "membershipLevel": "np"
+      },
+      {
+        "name": "Minds idiomas",
+        "adress": "Av: Francisco Prestes Maia, 613",
+        "number": "(11) 94713-8145",
+        "url": "https://mindsidiomas.com.br/",
+        "imagesrc": "images/minds.jpg",
+        "membershipLevel": "Gold"
+      },
+      {
+        "name": "PBKIDS",
+        "adress": "Av. Francisco Prestes Maia, 740",
+        "number": "(11) 4125-5018",
+        "url": "https://www.pbkids.com.br/",
+        "imagesrc": "images/pbkids.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "Brow Petshop",
+        "adress": "Av. Francisco Prestes Maia, 1064",
+        "number": "(11) 95080-8005",
+        "url": "https://petbrow.com.br/",
+        "imagesrc": "images/petshop.jpg",
+        "membershipLevel": "np"
+      },
+      {
+        "name": "SmartFit",
+        "adress": "Av. Francisco Prestes Maia, 361",
+        "number": "(11) 99807-9600",
+        "url": "https://www.smartfit.com.br/",
+        "imagesrc": "images/smartfit.jpg",
+        "membershipLevel": "Gold"
+      }
+    ]
+}
+
