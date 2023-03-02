@@ -44,6 +44,4 @@ var currentDay = new Date().getDay();
   }
 
 
-var formload = new Date();
-var datetime = formload.toISOString();
-document.getElementById("form").value = datetime;
+

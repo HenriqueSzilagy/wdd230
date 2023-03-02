@@ -575,3 +575,7 @@ form legend{
 .list section:nth-child(even) {
 	background-color: #920deb50;
 }
+span#last-visited {
+    text-align: center;
+    font-size: 1.3em;
+}
