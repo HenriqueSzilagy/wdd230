@@ -26,3 +26,10 @@ tfoot {
     font-size: 0.6rem;
     font-weight: 100;
   }
+  tbody tr:nth-child(odd) {
+    background-color: rgb(175, 171, 175);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f28920;
+}
