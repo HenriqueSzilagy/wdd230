@@ -10,7 +10,6 @@ if (lastVisited !== null) {
   } else {
     document.getElementById('last-visited').textContent = `You last visited this page ${differenceInDays} days ago`;
   }
-} else {
-  document.getElementById('last-visited').textContent = "You have never visited this page before";
-  localStorage.setItem('lastVisited', currentDate.toISOString());
 }
+
+localStorage.setItem('lastVisited', currentDate.toISOString());
