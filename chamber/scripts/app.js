@@ -45,3 +45,7 @@ var currentDay = new Date().getDay();
 
 
 
+var time = new Date();
+var dateTimeString = time.toISOString();
+document.getElementById('load-time').value = dateTimeString;
+
