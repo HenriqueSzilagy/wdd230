@@ -453,6 +453,7 @@ form legend{
 }
 .required{
     color: red;
+    font-size: 2em;
 }
  form input, textarea{
      margin-top: 1em;

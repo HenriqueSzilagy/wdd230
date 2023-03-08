@@ -171,7 +171,7 @@
         display: unset;
         text-align: center;
         box-shadow: none;
-        margin-right: 0.5em;
+        margin-right: 20%;
         
     }
     #benefits section{
@@ -206,6 +206,11 @@
         padding: 0.5rem;
         max-width: 900px;
         background-color: #eee;
-        
-}
+    }
+    form fieldset {
+        margin-left: 20%;
+    }
+    #submit {
+        margin-left: 21%;
+    }
 }
