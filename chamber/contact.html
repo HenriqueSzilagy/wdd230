@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thankyou</title>
+    <title>Contact</title>
     <link rel="shortcut icon" href="myIcon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
@@ -31,8 +31,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>         
+                <li><a href="directory.html">Directory</a></li>     
+                <li><a href="contact.html">Contact</a></li>   
             </ul>
         </nav>
         <div id="socialMedias">
@@ -46,16 +46,77 @@
         
         
         <div class="date"></div>
-       
     </header>
     <main>
-        <div id="thankyou">
-            <h1> Thank you for joining Sao Bernardo do Campo Chamber of Commerce, we are very grateful to have you with us</h1>
-            <img src="images/sbc2.jpg" alt="SBC Picture">
-            <h1>Our community thanks you, Any questions can contact us by the means listed at the end of this page, to continue browsing our site click on any tab above or on our chamber of commerce logo, have a great day
-            </h1>
+        <form id="form2" action="" method="get">
+            <fieldset id="ContactForm">
+                <legend>Contact Form</legend>
+                <span class="required">*</span>
+                <label for="name">full name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <span class="required">*</span>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <span class="required">*</span>
+                <label for="question">Question/Concern</label><br>
+                <textarea id="question" name="question/concern" rows="3" required></textarea>
+                <input type="hidden" id="load-time" name="load-time" value="" >
+                <input id="submit2" type="submit" value="Submit" ><br>
+                
+            </fieldset>
+        </form>
+
+        <div id="contactus">
+            <h1>Contact US</h1>
+            <h2>Address</h2>
+            <p>São Bernardo do Campo Chamber of Commerce</p>
+            <p>Street: Benedito Luiz Rodrigues 458</p>
+            <p>São Bernardo do Campo, São Paulo</p>
+            <h2>Phone</h2>
+            <p><a href="tel:+55(11)91312-9856" runtime_url="tel:+55(11)91312-9856" type="call" style="display: initial;" target="_blank">+55(11)91312-9856</a></p>
+            <h2>Email</h2>
+            <p><a href="contact@sbccc@gmail.com" type="email" style="display: initial;" target="_blank">contact@sbccc@gmail.com</a></p>
         </div>
+
+        <div id="pointsofcontact">
+            <h1>Points Of Contact</h1>
+            <h2>Lucas Tadeu Szilagy</h2>
+            <p>CEO</p>
+            <p>+55 (11) 99714-5675</p>
+            <h2>Maria Eduarda Martins Carvalho</h2>
+            <p>CFO</p>
+            <p>+55 (11) 95644-3265</p>
+            <h2>Salete Aparecida Guglielmo</h2>
+            <p>CMO</p>
+            <p>+55 (11) 97845-3299</p>
+            <h2>Gabriel Filipe Duskham</h2>
+            <p>CTO</p>
+            <p>+55 (11) 96543-7732</p>
+        </div>
+
+
+
+
+
+
+
+
+
     </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <footer>
         <div id="footerTop">
             <img src="images/ChamberLogo.webp" alt="ChamberLogo">
