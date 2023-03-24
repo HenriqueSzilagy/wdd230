@@ -24,13 +24,14 @@ function displayForecast(forecastData) {
 
   for (let i = 0; i < forecastItems.length; i++) {
     const forecast = forecastData.list[i * 8];
-    const temp = Math.round(forecast.main.temp);
+    const temp = Math.round((forecast.main.temp - 32) / 1.8);
+    
     const icon = forecast.weather[0].icon;
     const date = new Date(forecast.dt_txt).toLocaleDateString('en-US', { weekday: 'short' });
 
     forecastDays[i].textContent = date;
     forecastIcons[i].src = `https://openweathermap.org/img/w/${icon}.png`;
     forecastIcons[i].alt = forecast.weather[0].description;
-    forecastItems[i].querySelector('p').textContent = `${temp}°F`;
+    forecastItems[i].querySelector('p').textContent = `${temp}°C`;
   }
 }
