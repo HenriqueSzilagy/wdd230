@@ -1,0 +1,157 @@
+body {
+    display: block;
+    margin: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 130px 4fr;
+    background-color: rgba(128, 128, 128, 0.582);
+
+}
+#coast, #spotlight, .forecast, footer{
+    background-color: rgba(128, 128, 128, 0.582);
+}
+header img, footer img{
+    grid-column: 1/2;
+    width: 64px;
+    height: auto;
+    margin: 1em; 
+}
+header img{
+    margin-top: 1em;
+    margin-right: 0;
+}
+nav {
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 130px;
+}
+
+ul#navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+   font-size: 1em;
+
+}
+
+#navigation a:hover{
+    background-color: hsl(0deg 80.82% 59.71%);
+    color: #84cb2c;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 0.3cm;
+    display: block;
+    padding: 0.8rem 2vw;
+    
+}
+ul#navigation li:nth-child(1){
+    border-left: 1px solid rgba(0, 0, 0, 0.253);
+}
+h1,
+h2 {
+    text-align: center;
+}
+
+#coast,
+#makeOwnDrink {
+    text-align: center;
+}
+#makeOwnDrink img{
+    border: 1px solid hsl(0deg 100% 70.16%);
+}
+.hero,
+#makeOwnDrink img {
+    display: inline-block;
+    
+}
+.hero img {
+    width: 98%;
+    height: auto;
+    border: 1px solid hsl(0deg 100% 70.16%);
+}
+#coast p{
+        font-size: 1.3em; 
+}
+#coast,
+#makeOwnDrink,
+#forecast, #specialtyDrinks {
+    border: 1px solid black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#makeOwnDrink p {
+    font-size: 2em;
+    background-color: hsl(0deg 100% 70.16%);
+    color: white;
+    border: 1px solid #84cb2c;
+    padding: 4px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 7px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#makeOwnDrink a {
+    color: hsl(0deg 80.82% 59.71%);
+    text-decoration-color: #84cb2c;
+}
+#makeOwnDrink a:hover{
+    background-color: hsl(0deg 80.82% 59.71%);
+    color: #84cb2c;
+}
+#weather,
+#forecast-items {
+    border: 1px solid black;
+
+}
+
+.forecast-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.forecast-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+footer{
+    margin-top: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+#socialMedias img{
+    width: 32px;
+    height: auto;
+}
+#socialMedias a{
+    text-decoration: none;
+}
+div#items {
+    display: flex;
+    justify-content: space-around;
+}
