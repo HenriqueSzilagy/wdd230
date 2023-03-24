@@ -34,11 +34,6 @@ div#makeOwnDrink, div#specialtyDrinks {
     width: 48%;
     margin: 0.4em;
 }
-footer{
-   
-   justify-content: none;
-}
-
 div#contact {
     display: flex;
     margin-bottom: 1em;
