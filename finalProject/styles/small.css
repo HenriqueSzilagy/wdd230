@@ -2,15 +2,19 @@ body {
     display: block;
     margin: 8px;
 }
+h1, h2, h3{font-family: 'Playfair+Display', sans-serif;}
+
+p{font-family: 'Lato', sans-serif;}
 
 header {
     display: grid;
     grid-template-columns: 130px 4fr;
-    background-color: rgba(128, 128, 128, 0.582);
+    background-color: rgb(255 214 161 / 59%);
+    border: 1px solid black;
 
 }
-#coast, #spotlight, .forecast, footer{
-    background-color: rgba(128, 128, 128, 0.582);
+#coast, #makeOwnDrink, #specialtyDrinks,#weather,.forecast-items, footer{
+    background-color: rgb(255 214 161 / 59%);
 }
 header img, footer img{
     grid-column: 1/2;
@@ -21,6 +25,7 @@ header img, footer img{
 header img{
     margin-top: 1em;
     margin-right: 0;
+    
 }
 nav {
     grid-column: 2/4;
@@ -81,7 +86,8 @@ h2 {
     border: 1px solid hsl(0deg 100% 70.16%);
 }
 #coast p{
-        font-size: 1.3em; 
+        font-size: 1.3em;
+        padding-inline: 1em; 
 }
 #coast,
 #makeOwnDrink,

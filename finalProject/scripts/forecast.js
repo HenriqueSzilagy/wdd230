@@ -23,7 +23,7 @@ function displayForecast(forecastData) {
   const forecastIcons = document.querySelectorAll('.forecast-item img');
 
   for (let i = 0; i < forecastItems.length; i++) {
-    const forecast = forecastData.list[i * 8];
+    const forecast = forecastData.list[(i + 1) * 8];
     const temp = Math.round((forecast.main.temp - 32) / 1.8);
     
     const icon = forecast.weather[0].icon;

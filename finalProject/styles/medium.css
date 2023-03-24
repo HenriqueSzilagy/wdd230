@@ -9,12 +9,12 @@ ul#navigation a {
 }
 #spotlight{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
 div#makeOwnDrink, div#specialtyDrinks {
-    width: 48%;
+    width: 49%;
 }
 #coast h1{
     font-size: 3em;
@@ -24,15 +24,15 @@ div#makeOwnDrink, div#specialtyDrinks {
 }
 .forecast {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #makeOwnDrink img {
     width: 95%;
 }
 
 .forecast-items, #weather{
-    width: 48%;
-    margin: 0.4em;
+    width: 49%;
+    
 }
 div#contact {
     display: flex;
