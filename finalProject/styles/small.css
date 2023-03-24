@@ -92,7 +92,7 @@ h2 {
 }
 #makeOwnDrink h3 {
     font-size: 2em;
-    background-color: hsl(0deg 100% 70.16%);
+    background-color: hsl(0deg 91.22% 62.57%);
     color: white;
     border: 2.5px solid #84cb2c;
     padding: 4px;
@@ -103,7 +103,7 @@ h2 {
     margin-bottom: 10px;
 }
 #makeOwnDrink a {
-    color: hsl(0deg 80.82% 59.71%);
+    color: hsl(0deg 91.22% 62.57%);
     text-decoration-color: #84cb2c;
 }
 #makeOwnDrink a:hover{
