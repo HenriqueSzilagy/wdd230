@@ -1,0 +1,65 @@
+@media only screen and (min-width: 45rem){
+
+header img{
+    width: 100px;
+    height: auto;
+}
+ul#navigation a { 
+    font-size: 2em;
+}
+#spotlight{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div#makeOwnDrink, div#specialtyDrinks {
+    width: 48%;
+}
+#coast h1{
+    font-size: 3em;
+}
+#coast p{
+    font-size: 2em; 
+}
+.forecast {
+    display: flex;
+    justify-content: space-around;
+}
+#makeOwnDrink img {
+    width: 95%;
+}
+
+.forecast-items, #weather{
+    width: 48%;
+    margin: 0.4em;
+}
+footer{
+   
+   justify-content: none;
+}
+
+div#contact {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+footer img{
+    width: 164px;
+    height: auto;
+}
+#socialMedias{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+}
