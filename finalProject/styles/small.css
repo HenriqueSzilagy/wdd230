@@ -159,4 +159,5 @@ footer{
 div#items {
     display: flex;
     justify-content: space-around;
+    /* a */ 
 }
