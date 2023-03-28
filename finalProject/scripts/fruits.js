@@ -112,14 +112,15 @@ form.addEventListener("submit", function(event) {
     personalInformation.style.gridColumn = "1/2";
     output.appendChild(nutritionalInfo);
     
+    function displayDrinkCounter() {
+        var drinkCounterElement = document.getElementById("drinkCounter");
+        if (drinkCounterElement) {
+          var drinkCounter = localStorage.getItem("drinkCounter");
+          if (drinkCounter) {
+            drinkCounterElement.innerText = drinkCounter;
+          }
+        }
+    }  
+    displayDrinkCounter();
   });
-  function displayDrinkCounter() {
-    var drinkCounterElement = document.getElementById("drinkCounter");
-    if (drinkCounterElement) {
-      var drinkCounter = localStorage.getItem("drinkCounter");
-      if (drinkCounter) {
-        drinkCounterElement.innerText = drinkCounter;
-      }
-    }
-}  
-displayDrinkCounter();
+  
