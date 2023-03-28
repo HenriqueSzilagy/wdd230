@@ -112,9 +112,12 @@ form.addEventListener("submit", function(event) {
     
   });
   function displayDrinkCounter() {
-    let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
-    let drinkCounterElement = document.getElementById('drinkCounter');
-    drinkCounterElement.innerText = `Drinks: ${drinkCount}`;
-  }
-  
-  displayDrinkCounter();
+    var drinkCounterElement = document.getElementById("drinkCounter");
+    if (drinkCounterElement) {
+      var drinkCounter = localStorage.getItem("drinkCounter");
+      if (drinkCounter) {
+        drinkCounterElement.innerText = drinkCounter;
+      }
+    }
+}  
+displayDrinkCounter();
