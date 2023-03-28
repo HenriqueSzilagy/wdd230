@@ -19,12 +19,14 @@ async function getFreshData() {
 
 
 const displayFresh = (fresh, select) => {
-  let options = "";
-  for (const fruit of fresh) {
-    options += `<option value="${fruit.name}">${fruit.name}</option>`;
+    if (select) {
+      let options = "";
+      for (const fruit of fresh) {
+        options += `<option value="${fruit.name}">${fruit.name}</option>`;
+      }
+      select.innerHTML += options;
+    }
   }
-  select.innerHTML += options;
-}
 
 getFreshData();
 
