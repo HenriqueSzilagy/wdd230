@@ -81,8 +81,8 @@ form.addEventListener("submit", function(event) {
     }
   
     function updateDrinkCounter() {
-        let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
-        localStorage.setItem('drinkCount', drinkCount + 1);
+        const storedCount = parseInt(localStorage.getItem('drinkCount')) || 0;
+        localStorage.setItem('drinkCount', storedCount + 1);
       }
 
       updateDrinkCounter();
