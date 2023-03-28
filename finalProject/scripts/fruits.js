@@ -1,4 +1,4 @@
-const url = 'json/fruit.json';
+const fruitUrl = 'json/fruit.json';
 let data; // Declare the variable outside the function
 let drinkCount = 0; // Declare the drink count variable
 
