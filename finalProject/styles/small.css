@@ -161,3 +161,68 @@ div#items {
     justify-content: space-around;
    
 }
+div#customerOrder {
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgb(255 214 161 / 59%);
+}
+strong {
+    line-height: 2;
+    font-size: 1.2em;
+}
+p#output2 {
+    line-height: 1;
+    font-size: 1.2em;
+}
+select {
+    width: 65%;
+    max-width: 12.4em;
+    margin-bottom: 1em;
+}
+fieldset#personalInformation {
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: rgb(255 214 161 / 59%);
+}
+label {
+    font-size: 1.4em;
+    line-height: 2.5em;
+}
+input#submit {
+    display: block;
+    border: none;
+    background-color: hsl(0deg 91.22% 62.57%);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    width: 96%;
+    margin: auto;
+    max-width: 20rem;
+    font-size: 1.5em;
+}
+input#submit:hover {
+    background-color: #84cb2c;
+    text-decoration: underline;
+    text-decoration-color: hsl(0deg 91.22% 62.57%);
+    color: hsl(0deg 91.22% 62.57%);
+    font-weight: bold;
+}
+legend {
+    font-size: 1.4em;
+}
+span#drinkCounter {
+    font-size: 3em;
+}
+span {
+    text-align: center;
+    display: block;
+    font-size: 3em;
+    margin: auto;
+}
+#specialtyDrinks h2{
+    font-size: 3em;
+}

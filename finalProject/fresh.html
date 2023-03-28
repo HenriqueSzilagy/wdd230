@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="images/Bountiful_icon2.png" alt="">
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="order" method="get">
+                    
+            <fieldset id="personalInformation">
+                <legend>Personal Information</legend>
+                <span class="required">*</span>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <span class="required">*</span>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="jorgeSmith@gmail.com" required><br>
+                <span class="required">*</span>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <span class="required">*</span>
+                    <label for="membership-level">Fruit Drink:</label><br>
+                        <select  id="FirstFruit" name="First Fruit" required>
+                            <option value="" disabled selected hidden>Choose your First Fruit </option>
+                        </select><br>
+                        <select  id="SecondFruit" name="Second Fruit" required>
+                            <option value="" disabled selected hidden>Choose your Second Fruit</option>
+                        </select><br>
+                        <select  id="ThirdFruit" name="Third Fruit" required>
+                            <option value="" disabled selected hidden>Choose your Third Fruit</option>
+                        </select><br>
+                    <label for="special-instructions">Special Instructions:</label><br>
+                    <textarea id="special-instructions" name="special-instructions" rows="5"></textarea>
+            </fieldset>
+            <input type="hidden" id="load-time" name="load-time" value="">
+            <input id="submit" type="submit" value="Submit"><br>
+            <div id="customerOrder">
+                
+                <p id="output"></p>
+            </div>
+            <div id="nutritionalInfo">
+
+                <p id="output2"></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="contact">
+            <img src="images/Bountiful_icon2.png" alt="Bountiful icon">
+            <div class="info" >
+                <h2>Bountiful Food Headquarters</h2>
+                <p>3700 Pio Pico Dr, CA 92008</p>
+                <p>contact@bfcarlsbad@gmail.com</p>
+                <p>+(1) 760-123-4567</p>
+                <a href="https://goo.gl/maps/JdMu5EGz3UgRKxpj8">Location Map</a>
+            </div>
+        
+                <div id="socialMedias">
+                <a id="inst" href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                </a>
+                <a id="linke" href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook icon">
+                </a>
+                <a id="yout" href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.png" alt="Youtube icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/fruits.js"></script>
+</body>
+</html>
