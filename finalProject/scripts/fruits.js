@@ -9,7 +9,7 @@ if (storedCount !== null) {
 }
 
 async function getFreshData() {
-  const response = await fetch(url);
+  const response = await fetch(fruitUrl);
   data = await response.json(); // Assign the value inside the function
 
   displayFresh(data.fresh, document.getElementById("FirstFruit"));
