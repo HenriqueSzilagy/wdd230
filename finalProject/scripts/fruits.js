@@ -19,14 +19,12 @@ async function getFreshData() {
 
 
 const displayFresh = (fresh, select) => {
-    if (select) {
-      let options = "";
-      for (const fruit of fresh) {
-        options += `<option value="${fruit.name}">${fruit.name}</option>`;
-      }
-      select.innerHTML += options;
-    }
+  let options = "";
+  for (const fruit of fresh) {
+    options += `<option value="${fruit.name}">${fruit.name}</option>`;
   }
+  select.innerHTML += options;
+}
 
 getFreshData();
 
@@ -112,15 +110,16 @@ form.addEventListener("submit", function(event) {
     personalInformation.style.gridColumn = "1/2";
     output.appendChild(nutritionalInfo);
     
-    function displayDrinkCounter() {
-        var drinkCounterElement = document.getElementById("drinkCounter");
-        if (drinkCounterElement) {
-          var drinkCounter = localStorage.getItem("drinkCounter");
-          if (drinkCounter) {
-            drinkCounterElement.innerText = drinkCounter;
-          }
-        }
-    }  
-    displayDrinkCounter();
   });
-  
+  function displayDrinkCounter() {
+    var drinkCounterElement = document.getElementById("drinkCount");
+    if (drinkCounterElement) {
+      var drinkCounter = localStorage.getItem("drinkCount");
+      if (drinkCounter) {
+        drinkCounterElement.textContent = drinkCounter;
+      }
+    }
+}  
+
+displayDrinkCounter();
+
