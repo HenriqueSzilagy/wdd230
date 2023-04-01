@@ -1,37 +1,34 @@
 const fruitUrl = 'json/fruit.json';
-let data; 
+let data; // Declare the variable outside the function
 const drinkCountElement = document.getElementById('drinkCount');
 let drinkCount = 0;
 
+// Retrieve the drink count from local storage, if it exists
 const storedCount = localStorage.getItem('drinkCount');
 if (storedCount !== null) {
   drinkCount = parseInt(storedCount);
 }
 
-if (drinkCountElement !== null) {
-  drinkCountElement.textContent = drinkCount.toString();
-}
-
+// Update the drink count element on the page
+drinkCountElement.textContent = drinkCount.toString();
+// Load the other HTML file and extract the drinkCount value
 fetch('other.html')
   .then(response => response.text())
   .then(html => {
     const parser = new DOMParser();
     const dom = parser.parseFromString(html, 'text/html');
-    const newDrinkCountElement = dom.getElementById('drinkCount');
-    if (newDrinkCountElement) {
-      const count = parseInt(newDrinkCountElement.textContent);
+    const drinkCountElement = dom.getElementById('drinkCount');
+    if (drinkCountElement) {
+      const count = parseInt(drinkCountElement.textContent);
       if (!isNaN(count)) {
         drinkCount = count;
-        if (drinkCountElement !== null) {
-          drinkCountElement.textContent = drinkCount.toString();
-        }
       }
     }
   });
 
 async function getFreshData() {
   const response = await fetch(fruitUrl);
-  data = await response.json(); 
+  data = await response.json(); // Assign the value inside the function
 
   displayFresh(data.fresh, document.getElementById("FirstFruit"));
   displayFresh(data.fresh, document.getElementById("SecondFruit"));
@@ -39,11 +36,11 @@ async function getFreshData() {
 }
 
 const displayFresh = (fresh, select) => {
-  let options = "<option value='' selected>Select your fruit</option>";
+  let options = "";
   for (const fruit of fresh) {
     options += `<option value="${fruit.name}">${fruit.name}</option>`;
   }
-  select.innerHTML = options; 
+  select.innerHTML += options;
 }
 
 getFreshData();
@@ -59,19 +56,8 @@ const output3 = document.getElementById("output3");
 customerOrder.style.display = "none";
 nutritionalInfo.style.display = "none";
 
-let formSubmitted = false; 
-
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-
- 
-  if (formSubmitted) {
-    return;
-  }
-
-
-  formSubmitted = true;
-
   const firstName = document.querySelector("#fname").value;
   const email = document.querySelector("#email").value;
   const phone = document.querySelector("#phone").value;
@@ -107,20 +93,17 @@ form.addEventListener("submit", function(event) {
     }
   }
 
-  
+  // Increment the drink count
   drinkCount++;
 
- 
+  // Store the updated drink count in local storage
   localStorage.setItem('drinkCount', drinkCount.toString());
- 
-  const drinkCountElement = document.getElementById('drinkCount');
-if (drinkCountElement !== null) {
-  drinkCountElement.textContent = drinkCount.toString();
-}
   
+  // Update the drink count element on the page
+  drinkCountElement.textContent = drinkCount.toString();
 
   
-   
+    // Insert customer order section
     customerOrder.insertAdjacentHTML("afterbegin", "<h1>Customer Order:</h1>");
     output.innerHTML = `<strong>Name:</strong> ${firstName}`;
     output.innerHTML += `<br><strong>Email:</strong> ${email}`;
@@ -131,7 +114,7 @@ if (drinkCountElement !== null) {
     output.innerHTML += `<br><strong>Special Instructions:</strong> ${specialinstructions}`;
     output.innerHTML += `<br><strong>Order Date:</strong> ${orderDate}`;
   
-   
+    // Insert nutritional information section
     nutritionalInfo.insertAdjacentHTML("afterbegin", "<h1>Nutritional Information:</h1>");
     output2.innerHTML += `<p>Total Carbohydrates: ${totalCarbs.toFixed(1)} g</p>`;
     output2.innerHTML += `<p>Total Protein: ${totalProtein.toFixed(1)} g</p>`;

@@ -65,6 +65,7 @@ div#customerOrder{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-bottom: 16px;
+    margin-top: 36px;
 }
 input#submit{
     grid-column: 1/3;
