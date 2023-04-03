@@ -281,3 +281,7 @@ span.required {
 #historicalInformation p, #contacts p{
     font-size: 1.5em;
 }
+#lastmodified{
+    margin-top: 15px;
+    font-size: 1em;
+}
