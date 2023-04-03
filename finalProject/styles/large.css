@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64rem){
+    main{
+        display: grid;
+       
+    }
+    #historicalInformation{
+        grid-column: 1/2;
+        margin-right: 8px;
+    }
+    #contacts{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 1em;
+    }
+    .map{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        
+        
+    }
+}
