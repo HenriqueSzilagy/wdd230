@@ -264,8 +264,8 @@ span.required {
 #historicalInformation {
     text-align: center;
     margin-bottom: 8px;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
     border: 1px solid black;
     margin-top: 8px;
     background-color: rgb(255 214 161 / 59%);
@@ -277,4 +277,7 @@ span.required {
 }
 .ol-viewport {
     border: 1px solid black;
+}
+#historicalInformation p, #contacts p{
+    font-size: 1.5em;
 }
