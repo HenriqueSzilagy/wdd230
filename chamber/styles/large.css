@@ -5,6 +5,7 @@
     nav button{
         display: none;
    }
+   
     nav ul{
         display: flex;
         border-left: 1px solid rgba(0, 0, 0, 0.253);
@@ -221,5 +222,8 @@
     }
     #submit {
         margin-left: 21%;
+    }
+    nav ul.open {
+        display: flex;
     }
 }

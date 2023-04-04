@@ -1,6 +1,6 @@
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=São Bernardo do Campo&units=imperial&appid=b70f6624d9d608896871085b4ad7d933'
 
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#figcaption');
 const weatherIcon = document.querySelector('#weather-icon');
 
 async function apiFetch() {
@@ -43,7 +43,7 @@ async function apiFetch() {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     
-    captionDesc.textContent = desc;
+    captionDesc.innerHTML = `${desc}`;
 
 }
 
