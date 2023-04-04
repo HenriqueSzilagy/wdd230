@@ -1,5 +1,33 @@
 const fruitUrl = 'json/fruit.json';
-let data;
+let data; 
+const drinkCountElement = document.getElementById('drinkCount');
+let drinkCount = 0;
+
+const storedCount = localStorage.getItem('drinkCount');
+if (storedCount !== null) {
+  drinkCount = parseInt(storedCount);
+}
+
+if (drinkCountElement !== null) {
+  drinkCountElement.textContent = drinkCount.toString();
+}
+
+fetch('fresh.html')
+  .then(response => response.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const dom = parser.parseFromString(html, 'text/html');
+    const newDrinkCountElement = dom.getElementById('drinkCount');
+    if (newDrinkCountElement) {
+      const count = parseInt(newDrinkCountElement.textContent);
+      if (!isNaN(count)) {
+        drinkCount = count;
+        if (drinkCountElement !== null) {
+          drinkCountElement.textContent = drinkCount.toString();
+        }
+      }
+    }
+  });
 
 async function getFreshData() {
   const response = await fetch(fruitUrl);
@@ -28,6 +56,7 @@ const output = document.getElementById("output");
 const output2 = document.getElementById("output2");
 const output3 = document.getElementById("output3");
 
+
 customerOrder.style.display = "none";
 nutritionalInfo.style.display = "none";
 
@@ -36,9 +65,11 @@ let formSubmitted = false;
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
+ 
   if (formSubmitted) {
     return;
   }
+
 
   formSubmitted = true;
 
@@ -78,15 +109,12 @@ form.addEventListener("submit", function(event) {
   }
 
   
-  
-  
+  drinkCount++;
 
+ 
+  localStorage.setItem('drinkCount', drinkCount.toString());
+ 
   const drinkCountElement = document.getElementById('drinkCount');
-let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
-drinkCount++;
-
-localStorage.setItem('drinkCount', drinkCount.toString());
-
 if (drinkCountElement !== null) {
   drinkCountElement.textContent = drinkCount.toString();
 }
